@@ -51715,11 +51715,13 @@ var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //import About from "./About";
+//import Experiences from "./Experience";
+//import Projects from "./Projects";
 const Home = () => {
   return (
     /*#__PURE__*/
-    (0, _jsxRuntime.jsx)("section", {
-      children:
+    (0, _jsxRuntime.jsxs)("section", {
+      children: [
       /*#__PURE__*/
       (0, _jsxRuntime.jsx)(_reactBootstrap.Container, {
         fluid: true,
@@ -51731,11 +51733,11 @@ const Home = () => {
           className: "home-content",
           children:
           /*#__PURE__*/
-          (0, _jsxRuntime.jsx)(_reactBootstrap.Row, {
-            children:
+          (0, _jsxRuntime.jsxs)(_reactBootstrap.Row, {
+            children: [
             /*#__PURE__*/
             (0, _jsxRuntime.jsxs)(_reactBootstrap.Col, {
-              md: 7,
+              md: 8,
               className: "home-header",
               children: [
               /*#__PURE__*/
@@ -51771,10 +51773,35 @@ const Home = () => {
                 /*#__PURE__*/
                 (0, _jsxRuntime.jsx)(_Typewriter.default, {})
               })]
-            })
+            }),
+            /*#__PURE__*/
+            (0, _jsxRuntime.jsx)(_reactBootstrap.Col, {
+              md: 4,
+              style: {
+                paddingBottom: 15
+              },
+              children:
+              /*#__PURE__*/
+              (0, _jsxRuntime.jsx)("h1", {
+                className: "home-header",
+                children: "Insert selfie"
+              })
+            })]
           })
         })
-      })
+      }),
+      /*#__PURE__*/
+      (0, _jsxRuntime.jsx)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 1440 320",
+        children:
+        /*#__PURE__*/
+        (0, _jsxRuntime.jsx)("path", {
+          fill: "#386fa4",
+          "fill-opacity": "1",
+          d: "M0,32L48,32C96,32,192,32,288,32C384,32,480,32,576,42.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        })
+      })]
     })
   );
 };
@@ -51893,7 +51920,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel/src/builtins/bundle-url.js"}],"../node_modules/bootstrap/dist/css/bootstrap.min.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -51923,6 +51956,8 @@ var _Projects = _interopRequireDefault(require("./Components/Projects"));
 var _Resume = _interopRequireDefault(require("./Components/Resume"));
 
 var _Footer = _interopRequireDefault(require("./Components/Footer"));
+
+require("bootstrap/dist/css/bootstrap.min.css");
 
 require("./style.css");
 
@@ -51960,7 +51995,7 @@ const App = () => {
 (0, _reactDom.render)(
 /*#__PURE__*/
 (0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-dom":"../node_modules/react-dom/index.js","./Components/Home/Home":"Components/Home/Home.js","./Components/Navbar":"Components/Navbar.js","./Components/Experience":"Components/Experience.js","./Components/Projects":"Components/Projects.js","./Components/Resume":"Components/Resume.js","./Components/Footer":"Components/Footer.js","./style.css":"style.css","./App.css":"App.css","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-dom":"../node_modules/react-dom/index.js","./Components/Home/Home":"Components/Home/Home.js","./Components/Navbar":"Components/Navbar.js","./Components/Experience":"Components/Experience.js","./Components/Projects":"Components/Projects.js","./Components/Resume":"Components/Resume.js","./Components/Footer":"Components/Footer.js","bootstrap/dist/css/bootstrap.min.css":"../node_modules/bootstrap/dist/css/bootstrap.min.css","./style.css":"style.css","./App.css":"App.css","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -3,7 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container fluid className="home-about-section" id="about"></Container>
+    <Container fluid className="home-about-section" id="about">
+      <Container>
+        <Row></Row>
+      </Container>
+    </Container>
   );
 };
 export default About;
