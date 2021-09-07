@@ -7,6 +7,7 @@ import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
 import Footer from "./Components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./App.css";
 
