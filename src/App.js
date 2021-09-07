@@ -13,7 +13,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Home />
+    <ExperiencePage />
     /*<Router>
       <div className="App">
         <Navbar />
