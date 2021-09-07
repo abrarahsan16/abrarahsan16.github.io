@@ -1,1 +1,1 @@
-export default function Experience() {}
+export default function ExperiencePage() {}

@@ -51823,18 +51823,18 @@ function Navbar() {}
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Experience;
+exports.default = ExperiencePage;
 
-function Experience() {}
+function ExperiencePage() {}
 },{}],"Components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Projects;
+exports.default = ProjectsPage;
 
-function Projects() {}
+function ProjectsPage() {}
 },{}],"Components/Resume.js":[function(require,module,exports) {
 "use strict";
 
@@ -51980,8 +51980,8 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/project" component={Projects} />
+          <Route path="/experience" component={ExperiencePage} />
+          <Route path="/project" component={ProjectsPage} />
           <Route path="/resume" component={Resume} />
         </Switch>
         <Footer />
@@ -52023,7 +52023,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51386" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56704" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

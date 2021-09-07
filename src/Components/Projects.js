@@ -1,1 +1,1 @@
-export default function Projects() {}
+export default function ProjectsPage() {}
