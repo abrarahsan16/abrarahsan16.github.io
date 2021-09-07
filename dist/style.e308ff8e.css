@@ -254,7 +254,7 @@ html {
   position: relative;
   z-index: -1;
   background-position: top center;
-  background-color: blue;
+  background-color: #386fa4;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
@@ -262,7 +262,7 @@ html {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: #91e5f6;
   text-align: left;
 }
 
@@ -277,7 +277,7 @@ html {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #59a5d8;
 }
 
 .Typewriter__wrapper {

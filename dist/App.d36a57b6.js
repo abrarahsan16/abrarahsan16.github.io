@@ -51711,8 +51711,13 @@ const Home = () => {
                 /*#__PURE__*/
                 (0, _jsxRuntime.jsx)("strong", {
                   className: "main-name",
-                  children: "Abrar Ahsan!"
+                  children: " Abrar Ahsan!"
                 })]
+              }),
+              /*#__PURE__*/
+              (0, _jsxRuntime.jsx)("h2", {
+                className: "heading",
+                children: "And welcome to my page!"
               })]
             })
           })
