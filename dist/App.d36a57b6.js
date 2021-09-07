@@ -51696,16 +51696,7 @@ function Type() {
 
 var _default = Type;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","typewriter-effect":"../node_modules/typewriter-effect/dist/react.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Home/About.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = About;
-exports.default = _default;
-},{}],"Components/Home/Home.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","typewriter-effect":"../node_modules/typewriter-effect/dist/react.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Home/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51719,12 +51710,11 @@ var _reactBootstrap = require("react-bootstrap");
 
 var _Typewriter = _interopRequireDefault(require("./Typewriter"));
 
-var _About = _interopRequireDefault(require("./About"));
-
 var _jsxRuntime = require("react/jsx-runtime");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//import About from "./About";
 const Home = () => {
   return (
     /*#__PURE__*/
@@ -51791,7 +51781,7 @@ const Home = () => {
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./Typewriter":"Components/Home/Typewriter.js","./About":"Components/Home/About.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Navbar.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./Typewriter":"Components/Home/Typewriter.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Navbar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51998,7 +51988,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51764" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51386" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
