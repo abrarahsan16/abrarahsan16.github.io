@@ -51663,7 +51663,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-jsx-runtime.development.js');
 }
-},{"./cjs/react-jsx-runtime.development.js":"../node_modules/react/cjs/react-jsx-runtime.development.js"}],"Components/Typewriter.js":[function(require,module,exports) {
+},{"./cjs/react-jsx-runtime.development.js":"../node_modules/react/cjs/react-jsx-runtime.development.js"}],"Components/Home/Typewriter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51696,7 +51696,16 @@ function Type() {
 
 var _default = Type;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","typewriter-effect":"../node_modules/typewriter-effect/dist/react.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Home.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","typewriter-effect":"../node_modules/typewriter-effect/dist/react.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Home/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = About;
+exports.default = _default;
+},{}],"Components/Home/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51709,6 +51718,8 @@ var _react = _interopRequireDefault(require("react"));
 var _reactBootstrap = require("react-bootstrap");
 
 var _Typewriter = _interopRequireDefault(require("./Typewriter"));
+
+var _About = _interopRequireDefault(require("./About"));
 
 var _jsxRuntime = require("react/jsx-runtime");
 
@@ -51780,7 +51791,7 @@ const Home = () => {
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./Typewriter":"Components/Typewriter.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Navbar.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./Typewriter":"Components/Home/Typewriter.js","./About":"Components/Home/About.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"Components/Navbar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51789,15 +51800,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Navbar;
 
 function Navbar() {}
-},{}],"Components/About.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = About;
-
-function About() {}
 },{}],"Components/Experience.js":[function(require,module,exports) {
 "use strict";
 
@@ -51920,11 +51922,9 @@ var _reactRouterDom = require("react-router-dom");
 
 var _reactDom = require("react-dom");
 
-var _Home = _interopRequireDefault(require("./Components/Home"));
+var _Home = _interopRequireDefault(require("./Components/Home/Home"));
 
 var _Navbar = _interopRequireDefault(require("./Components/Navbar"));
-
-var _About = _interopRequireDefault(require("./Components/About"));
 
 var _Experience = _interopRequireDefault(require("./Components/Experience"));
 
@@ -51955,7 +51955,6 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
           <Route path="/project" component={Projects} />
           <Route path="/resume" component={Resume} />
@@ -51971,7 +51970,7 @@ const App = () => {
 (0, _reactDom.render)(
 /*#__PURE__*/
 (0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-dom":"../node_modules/react-dom/index.js","./Components/Home":"Components/Home.js","./Components/Navbar":"Components/Navbar.js","./Components/About":"Components/About.js","./Components/Experience":"Components/Experience.js","./Components/Projects":"Components/Projects.js","./Components/Resume":"Components/Resume.js","./Components/Footer":"Components/Footer.js","./style.css":"style.css","./App.css":"App.css","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-dom":"../node_modules/react-dom/index.js","./Components/Home/Home":"Components/Home/Home.js","./Components/Navbar":"Components/Navbar.js","./Components/Experience":"Components/Experience.js","./Components/Projects":"Components/Projects.js","./Components/Resume":"Components/Resume.js","./Components/Footer":"Components/Footer.js","./style.css":"style.css","./App.css":"App.css","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -51999,7 +51998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53395" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51764" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

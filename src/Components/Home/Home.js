@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Typewriter";
+import About from "./About";
 
 const Home = () => {
   return (

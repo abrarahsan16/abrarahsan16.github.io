@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { render } from "react-dom";
-import Home from "./Components/Home";
+import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
@@ -19,7 +18,6 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
           <Route path="/project" component={Projects} />
           <Route path="/resume" component={Resume} />
