@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { render } from "react-dom";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar";
-import Experience from "./Components/Experience";
-import Projects from "./Components/Projects";
+import ExperiencePage from "./Components/Experience";
+import ProjectsPage from "./Components/Projects";
 import Resume from "./Components/Resume";
-import Footer from "./Components/Footer";
+import FooterPage from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./App.css";
@@ -19,8 +19,8 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/project" component={Projects} />
+          <Route path="/experience" component={ExperiencePage} />
+          <Route path="/project" component={ProjectsPage} />
           <Route path="/resume" component={Resume} />
         </Switch>
         <Footer />
